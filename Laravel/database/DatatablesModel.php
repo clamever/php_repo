@@ -134,4 +134,20 @@ HTML;
 		}
 		return $rs;
 	}
+	
+	/**
+	 * 用来计算查询出的总条数
+	 *
+	 * @date: 2014-10-21 下午2:59:22
+	 * @author: 张啟明<1095841676@qq.com>
+	 * @return:
+	 */
+	public function getCount() {
+		$obj = $this;
+			
+		if (!empty($this->_where)) {
+			$obj = $this->whereRaw($this->_where['param'], $this->_where['bind']);
+		}
+		return $obj->count();
+	}
 }
