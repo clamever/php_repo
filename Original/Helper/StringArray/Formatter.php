@@ -15,10 +15,24 @@ class Formatter {
 	* @param $hostName 主机名（上面的a）
 	* @param $address 邮件地址名（上面的b@c.com）
 	* @author: 张啟明<1095841676@qq.com>
-	* @return:
+	* @return: 
 	*/
 	public function formatSendEmailAddress($hostName,$address) {
 		$formattedAddress = $hostName . "<" . $address . ">";
 		return $formattedAddress;
+	}
+	/**
+	* 用来将下划线分割式字符串改为驼峰式字符串
+	*
+	* @date: 2014-10-31 下午12:10:29
+	* @author: 张啟明<1095841676@qq.com>
+	* @param $value 待转换的下划线分割式字符串
+	* @return:$value
+	*/
+	public function camer($value) {
+		$value = ucwords(str_replace(array('-', '_'), ' ', $value));
+		$value = str_replace(' ', '', $value);
+		$value = lcfirst($value);
+		return $value;
 	}
 }
