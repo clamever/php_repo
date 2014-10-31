@@ -1,4 +1,4 @@
-<?php
+<?php namespace Laravel\algorithm;
 /**
 * 用于集成后台管理系统用到的一些算法 BackstageManagement.php
 *
