@@ -1,0 +1,21 @@
+{
+    "repositories": [
+        {"type": "composer", "url": "http://packagist.phpcomposer.com"},
+        {"packagist": false}
+    ],
+    "name": "hicks0074/php_rest",
+    "description": "michong vod api framework",
+    "authors": [
+        {
+            "name": "Hicks Jiang",
+            "email": "jiangchen@juwang.cn"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "vlucas/spot2": "~2.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.7.*"
+    }
+}
